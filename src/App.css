@@ -1,0 +1,97 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.status {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  color: var(--text-muted);
+}
+
+.status--ready {
+  color: var(--accent);
+}
+
+.status--unsupported,
+.status--denied,
+.status--error {
+  color: var(--error);
+}
+
+.connect-btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.connect-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.notes-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.notes-empty {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.notes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.note-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.note-name {
+  font-weight: 600;
+  min-width: 2.5rem;
+}
+
+.note-midi {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.note-velocity {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-left: auto;
+}
